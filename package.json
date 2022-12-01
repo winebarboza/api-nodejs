@@ -1,0 +1,34 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "API Rest simples usando NodeJS, express e sqlite.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winebarboza/api-nodejs.git"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "rest"
+  ],
+  "author": "Wine Barboza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/winebarboza/api-nodejs/issues"
+  },
+  "homepage": "https://github.com/winebarboza/api-nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
