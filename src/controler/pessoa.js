@@ -17,3 +17,15 @@ export async function upDatePessoa(pessoa){
         'UPDATE Pessoa SET nome=?, idade=? WHERE id=?',[pessoa.nome, pessoa.idade, pessoa.id]);
     })
 }
+export async function selectPessoas(pessoa){
+   return openDb().then(db=>{
+        return db.all('SELECT * FROM Pessoa')
+        .then(res=>res)
+    });
+}
+export async function selectPessoa(id){
+    return openDb().then(db=>{
+         return db.all('SELECT * FROM Pessoa WHERE id=?, [id]')
+         .then(res=>res)
+     });
+ }
