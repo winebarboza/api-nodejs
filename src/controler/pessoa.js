@@ -25,7 +25,7 @@ export async function selectPessoas(pessoa){
 }
 export async function selectPessoa(id){
     return openDb().then(db=>{
-         return db.all('SELECT * FROM Pessoa WHERE id=?, [id]')
+         return db.get('SELECT * FROM Pessoa WHERE id=?', [id])
          .then(res=>res)
      });
  }
